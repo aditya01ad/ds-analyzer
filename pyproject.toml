@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ds-analyzer"
+version = "0.1.0"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+description = "A tool to analyze if a graph is Determined by its Spectrum (DS)."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file="LICENSE" }
+classifiers = []
+dependencies = [
+    "networkx",
+    "numpy",
+    "scipy",
+    "click",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/your-username/ds-analyzer"
+"Bug Tracker" = "https://github.com/your-username/ds-analyzer/issues"
+
+# This section makes your CLI command available after installation
+[project.scripts]
+ds-analyzer = "ds_analyzer.cli:main"
